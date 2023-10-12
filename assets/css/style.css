@@ -1,0 +1,234 @@
+:root {
+    --background-color: rgb(223, 165, 118);
+    --border-color: rgb(216, 101, 47);
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: var(--background-color);
+    background-image: url(../background.jpg);
+    background-size: 2700px 2500px;
+}
+
+
+/*------------------------------------------------- Header Section --------------------------------------------*/
+
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 0;
+    background-color: var(--background-color);
+    margin: 20px;
+    padding: 30px;
+    border: 10px solid var(--border-color);
+    opacity: .9;
+    justify-content: space-between;
+
+}
+
+.header h1 {
+
+    font-size: 400%;
+    font-weight: 900;
+    color: white;
+}
+
+
+
+.links {
+    text-align:center;
+    font-size: 400%;
+    font-weight: 900;
+    left:25%;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    margin: 50px;
+}
+
+.links li {
+    display: inline-block;
+}
+
+/*------------------------------------------------- Description Section --------------------------------------------*/
+
+.description {
+    display: flex;
+    flex-wrap: wrap;
+    /*height: 300px;*/
+    justify-content: space-between;
+    
+}
+
+.description div {
+    width: 30%;
+    padding: 30px; 
+    margin-left: 100px;
+    margin-top: 50px;
+    height: 75%;
+    color: white;
+    background-color: var(--background-color);
+    border: 10px solid var(--border-color);
+    opacity: .9;
+}
+
+.description h2 {
+margin-bottom: 50px;
+font-size: 250%;
+font-weight: 900;
+}
+
+.description p {
+    font-size: 175%;
+}
+
+.description img {
+    width: 20%;
+    height: 500px;
+    margin-left: 20%;
+    margin-top: 50px;
+    border-radius: 50%;
+    border: 10px solid var(--border-color);
+}
+
+/*------------------------------------------------- Music Section --------------------------------------------*/
+
+
+.music {
+    color: white;
+    margin-top:50px;
+    margin-left: 100px;
+    max-width:20%;
+    max-height: 30px;
+}
+
+#scroll-text {
+    border: 3px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#song-title {
+    font-size: 125%;
+    white-space: nowrap;
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    transform: translateX(100%);
+    animation: my-animation 15s linear infinite;
+}
+
+@-moz-keyframes my-animation {
+    from { -moz-transform: translateX(100%); }
+    to { -moz-transform: translateX(-100%); }
+  }
+  
+ 
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -moz-transform: translateX(-150%);
+      -webkit-transform: translateX(-150%);
+      transform: translateX(-150%);
+    }
+  }
+
+/*-------------------------------------------------- Project Section ---------------------------------------------*/
+
+main {
+    margin: 100px;
+    color: white;
+}
+
+main h2 {
+    font-size: 500%;
+    font-weight: 900;
+    border-bottom: 10px solid var(--border-color);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.project {
+    position: relative;
+    width: 40%;
+    margin-right: 10%;
+}
+
+.project > p {
+    font-size: 250%;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    z-index: 10;
+    background-color: var(--border-color);
+}
+
+.project img {
+    margin: 100px 75px 0px 75px;
+    max-width: 100%;
+    border: 10px solid var(--border-color);
+    opacity: .8;
+}
+
+.project img:hover {
+    opacity: 1;
+    box-shadow: 12px 12px var(--background-color);
+}
+
+/*-------------------------------------------------- Footer -------------------------------------------------------*/
+
+footer {
+    color: white;
+    background-color: var(--background-color);
+    margin: 10px;
+    padding: 5px;
+    border: 10px solid var(--border-color);
+    opacity: .9;
+    text-align: center;
+}
+
+/*--------------------------------------------------- Media Queries ------------------------------------------------*/
+
+@media screen and (max-width: 479px) {
+    body{ 
+
+    }
+
+    .description div {
+        width: 100%;
+    }
+    
+    .links li {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 994px) {
+    body{ 
+
+    }
+}

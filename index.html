@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\assets\css\reset.css">
+    <link rel="stylesheet" href=".\assets\css\style.css">
+    <title>Arthur Stone Portfolio</title>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Arthur Stone</h1>
+        <nav class = "links">
+            <ul>
+                <li><a href="https://github.com/OC-Kai" target="_blank">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/arthur-stone-102382133/" target="_blank">LinkedIn</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="description">
+        <div>
+            <h2>About Me</h2>
+            <p>Hello! My name is Arthur and I am a programmer just starting out my journey. Here is my portfolio where I plan to display all of my completed and upcoming projects. I hope you enjoy your visit!</p>
+        </div>
+        <img src="./assets/KDA Peng.png" alt="a cartoon penguin dressed in purple hip-hop clothes holding a dagger">
+    </section>
+    <section class="music">
+        <audio controls id="audio"> 
+            <source src="./assets/Shiro Sagisu -  Everything I Lost (ft. Yoko Takahashi & The London Freedom Gospel Choir).mp3" type="audio/mpeg">
+        </audio>
+        <script>
+            var audio = document.getElementById("audio");
+            audio.volume = 0.1;
+        </script>
+        <div id="scroll-text">
+            <p id="song-title">Shiro Sagisu -  "Everything I Lost" (ft. Yoko Takahashi & The London Freedom Gospel Choir)</p>
+        </div>
+    </section>
+    <main id="projects">
+        <h2>Projects</h2>
+        <article class = "container">
+            <div class="project">
+                 <p>Prework Study Guide</p>
+                <a href="https://oc-kai.github.io/prework-study-guide/" target="_blank">
+                    <img src="./assets/prework-study-guide.png" alt="drawn picture of a laptop and coffee with notebooks on a desk.">
+                </a>
+            </div>
+            <div class="project">
+                <p>Code Refactor</p>
+                <a href="https://oc-kai.github.io/html-css-git-code-refactor/" target="_blank">
+                    <img src="./assets/code-refactor.jpg" alt="picture of code on black background">
+                </a>
+            </div>
+            <div class="project">
+                <p>Coming Soon!</p>
+                <img src="./assets/coming-soon1.png" alt="picture of abstract red and black background">
+            </div>
+            <div class="project">
+                <p>Coming Soon!</p>
+                <img src="./assets/coming-soon2.png" alt="picture of abstract yellow and blue background">
+            </div>
+        </article>
+            
+    </main>
+    <footer>
+        <h2>Contact Me:</h2>
+        <h3>Email: ArthurJStone96@gmail.com</h3>
+        <h3>Discord: kai.wen</h3>
+    </footer>
+
+</body>
+</html>
